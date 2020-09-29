@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalOCR"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/ocrimage"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button"
+            android:text="Save as PDF"
+            android:id="@+id/savepdf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:text="OCR Output:"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="28sp" />
+        <EditText
+            android:id="@+id/ocroutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ocr Output"
+            android:background="@drawable/highlight"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</ScrollView>
